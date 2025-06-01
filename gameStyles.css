@@ -1,0 +1,100 @@
+body {
+    background-color: pink;
+}
+
+/* navbar styles */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+nav > div:hover, nav > a:hover {
+    color: rgb(226, 97, 175);
+    animation-name: wobble;
+    animation-duration: 0.5s;
+}
+
+nav > a {
+    color: black;
+}
+
+@keyframes wobble {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(5deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(-5deg)}
+}
+
+.footer {
+    justify-self: center;
+    background-color: aliceblue;
+    width: 90vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 5vw;
+    font-size: 28px;
+    display:flex;
+    justify-content: end;
+    color:black;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+/* here lies game styles */
+
+#game-description {
+    display: flex;
+    justify-self: center;
+    background-color: white;
+    height: 30vw;
+    width: 60vw;
+    padding: 5vw;
+    margin-bottom: 20px;
+}
+
+/* stats */
+#game-stats {
+    display: flex;
+    justify-self: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background-color: white;
+    height: 30px;
+    width: 60vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.stat-box {
+    color: black;
+}
+
+/* option boxex */
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    width: 80vw;
+    justify-self: center;
+    height: 100px;
+    background-color: rgb(194, 43, 80);
+}
+
+.option-box:hover {
+    box-shadow: 5px 5px black;
+}
+
+.option-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px;
+    border: solid black 0.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
