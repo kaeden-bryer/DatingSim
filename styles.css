@@ -70,3 +70,14 @@ li {
 img {
     border-radius: 30px;
 }
+
+.slidy-div {
+    transition: background-position 0.5s;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, pink 50%, red 50%);
+    background-position: 100% 0;
+}
+
+.slidy-div:hover {
+    background-position: 0 0;
+}
